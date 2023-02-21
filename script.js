@@ -1,5 +1,5 @@
-
-    
+ 
+   
     let detalle = 'si'  // flag para indicar si está mostrando o no el detalle de la experiencia laboral 
     const items = document.querySelectorAll('.items')
     document.getElementById('btnMostrar').addEventListener('click',function() {    
