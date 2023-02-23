@@ -1,7 +1,7 @@
 {
     "name": "CV con datos ficticios",
     "short_name": "CV",
-    "theme_color": "red",
+    "theme_color": "blue",
     "background_color": "blue",
     "display": "fullscreen",
     "orientation": "portrait",
@@ -9,8 +9,8 @@
     "start_url": "./",
     "icons": [
         {
-            "src": "./icon.jpg",
-            "type": "image/jpg",
+            "src": "./icon.png",
+            "type": "image/png",
             "sizes": "640x640"
         }
     ]
