@@ -1,5 +1,9 @@
- 
-   
+    ////////////////////////////////////////////////////////////////
+    // Esta porción de código permite mostrar u ocultar el detalle //
+    // mostrado en la parte de Experiencia profesional //////////////
+    /////////////////////////////////////////////////////////////////  
+
+
     let detalle = 'si'  // flag para indicar si está mostrando o no el detalle de la experiencia laboral 
     const items = document.querySelectorAll('.items')
     document.getElementById('btnMostrar').addEventListener('click',function() {    
@@ -18,6 +22,10 @@
                 }});
     
     
+    /////////////////////////////////////////////////////////////////////            
+    // función que permite validar los datos ingresados en el formulario 
+    /////////////////////////////////////////////////////////////////////
+
     document.getElementById('btnEnviar').addEventListener('click', function() {
         let nombre = document.getElementById('nombre').value
         let email = document.getElementById('email').value
@@ -52,7 +60,7 @@
 
                 l.addEventListener('click', () => {
                      if (document.getElementById('barra').offsetParent != null)  {
-                        console.log(document.getElementById('barra').offsetParent)
+                        
                         bsCollapse.toggle()}
                      })})
 
