@@ -12,8 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">    
     <title>CV</title>
     <link rel="icon" href="icon.jpg">
+    <link rel="manifest" href="./manifest.json">
 </head>
+
+<script>
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+  }
  
+
+</script>
 
 <body>
     
