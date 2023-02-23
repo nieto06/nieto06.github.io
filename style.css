@@ -58,7 +58,8 @@ p {
 }
 
 #house, #home, #mail {
-   font-size: 15px;
+   font-size: 16px;
+   margin-top: 25px;  
 }
 
 #btnMostrar {
@@ -84,7 +85,15 @@ h4  {
 
 }
 
+/* #barra {
+   display: block
+}
 
+@media only screen and (min-width: 992px) {
+  #barra {
+    display: none
+  }
+} */
 
 .B {   /* estilo para los circulos azules */
    background: rgb(32,132,204);

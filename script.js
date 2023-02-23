@@ -44,9 +44,19 @@
 
     // https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-navbar-on-click
 
-    const navLinks = document.querySelectorAll('.nav-link')
-    const menuToggle = document.getElementById('navbarNavAltMarkup')
-    const bsCollapse = new bootstrap.Collapse(menuToggle)
-    navLinks.forEach((l) => {
-        l.addEventListener('click', () => { bsCollapse.toggle() })
-    })
+        const navLinks = document.querySelectorAll('.nav-link')
+        const menuToggle = document.getElementById('navbarNavAltMarkup')
+        const bsCollapse = new bootstrap.Collapse(menuToggle)
+        navLinks.forEach((l) => {
+            
+
+                l.addEventListener('click', () => {
+                     if (document.getElementById('barra').offsetParent != null)  {
+                        console.log(document.getElementById('barra').offsetParent)
+                        bsCollapse.toggle()}
+                     })})
+
+            
+        
+    
+    
