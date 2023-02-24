@@ -50,12 +50,13 @@
             });
 
 
-    /////////////////////////////////////////////////////////////////////////////////////////        
+    /////////////////////////////////////////////////////////////////////////////////////////////////////        
     //
-    // Función que permite que estando en pantalla de smartphone, al presionar en un menú  //
-    // (esta función se buscó en stackoverflow y fue mofificado para este proyecto)        //
+    // Función que permite que en modo de pantalla de smartphone, al presionar en algún ítem del menú  //
+    // de navegación, ésta misma se cierre para mostrar el contenido de la pantalla. 
+    // (esta funcionalidad se buscó en stackoverflow y fue mofificado para este proyecto)              //
     //
-    /////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
 
     const navLinks = document.querySelectorAll('.nav-link')
     const menuToggle = document.getElementById('navbarNavAltMarkup')
