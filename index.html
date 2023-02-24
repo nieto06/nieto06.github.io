@@ -1,3 +1,29 @@
+<!---------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+Curriculum realizado de forma responsiva utilizando componentes de Bootstrap y generando un WPA instalable.
+
+Para la imagen del CV se buscó una foto generado por IA desde el sitio https://generated.photos/ 
+
+Para contenido del CV se indagó en varias plantillas PDF desde la página de Canva: 
+    https://www.canva.com/es_ar/curriculum-vitae/plantillas/ 
+
+En el body se generó una cuadrícula de 2 filas y 2 columnas (divididas en div de 4 secciones)
+cada una contiene:
+    primer row:
+        sección 1: foto del cv
+        sección 2: Profesión, descripción, y datos de dirección mail y tel.
+    segundo row:
+        sección 3: Educación, competencias, referencias e Intereses
+        sección 4: Experiencia profesional, Conocimientos, y formulario de contacto
+
+La misma se generó de esa forma para que se muestre en smartphone en primer lugar el primer 'row' 
+destacándose la sección 1 y 2 al comienzo.
+
+-----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,26 +41,16 @@
     <link rel="manifest" href="./manifest.json">
 </head>
 
-<script>
-
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js");
-  }
- 
-
-</script>
-
 <body>
     
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-light navbar-justify-content-center"  style="background-color: rgb(32,132,204)"> 
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-light navbar-justify-content-center"> 
         <div class="container-fluid">
             <a class="navbar-brand" href="#">JOHN BARNES</a>    
             <button class="navbar-toggler" id="barra" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                     
+                <div class="navbar-nav">        
                     <a class="nav-link" href="#educacion">Educación</a>
                     <a class="nav-link" href="#competencias"  >Competencias</a>
                     <a class="nav-link" href="#exp_laboral"  >Experiencia Laboral</a>
@@ -44,94 +60,79 @@
                     <a class="nav-link" href="#intereses"  >Intereses</a>
                     <a class="nav-link" href="#form_contacto" >Formulario de contacto</a>
                 </div>
-                
             </div>
-       
         </div>
     </nav>
-
-    <section>
+    
     <div class="container-xl">
         <div class="row">
+
             <div class="col-sm-6 col-md-4" id="section1">
+
                 <div class="text-center">
-                    <img src="imagen_4.jpg" class="img-fluid" alt="Foto" >
+                    <img src="foto.jpg" class="img-fluid" alt="Foto" >
                 </div>    
             </div>
+
             <div class="col-sm-6 col-md-8" id="section2">
+
                 <div class="text-center">
                     <p id="profesion">Periodista y fotógrafo</p>
                 </div>
                 <div class="text-center" id="descripcion" >
                     <p><i>Trabajé en grandes periódicos y radios de la ciudad. 
-                        Lideré grupos de capacitación y optimización de 
-                        resultados en calidad de trabajos realizados en el sector.</i></p>
-                        
-                        <!-- Trabajé con grandes empresas del sector en
-                    atención al cliente. Lideré grupos de capacitación
-                    y optimización de resultados en calidad de
-                    respuesta al cliente.</i></p> -->
-
+                          Lideré grupos de capacitación y optimización de 
+                          resultados en calidad de trabajos realizados en el sector.</i></p>
                 </div>
-                <p id="house"><img src="house.png" alt="Domicilio"> Calle Pública A nro 6950. CP: 8015 - Barcelona (España)</p>
+                <p id="house"><img src="house.png" alt="Domicilio"> Calle Pública A nro 3500. CP: 8015 - Barcelona (España)</p>
                 <p id="home"><img src="phone.png" alt="Teléfono"> +54 9 351 123-456</p>
                 <p id="mail"><img src="mail.png" alt="Mail"><a href="mailto:jbarnes@example.com">jbarnes@example.com</p></a>
+           
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6 col-md-4" id="section3">
-                
+
                 <p class="titulo" id="educacion">Educación</p> 
-                
                 <p><b>Instituto Periodistico del Este</p></b>
                 <p>Título de Fotógrafo con promedio 8.5<br>2000 - 2003</p>
-              
                 <p><b>Instituto Periodistico Este</p></b>
                 <p>Título de Periodista con promedio 9<br>2004 - 2008</p>
-              
                 <p><b>Instituto Nacional</b></p>
                 <p>Relaciones Públicas<br>2010 - 2012</p>
-
                 <p><b>Instituto Nacional</b></p>
                 <p>Diseño gráfico<br>2013 - 2015</p>
-                 
+
                 <p class="titulo" id="competencias">Competencias</p>
                 <p>Trabajo en equipo</p>
                 <p>Responsabilidad de personal</p>
                 <p>Trabajo bajo presión</p>
                 <p>Visión de negocios</p>
                 <p>Orientación al cliente</p>
+
                 <p class="titulo" id="referencias">Referencias</p>
                 <p><b>Carla Petrakis</b></p>
                 <p>Industrias López<br>+34-91-1234-567</p>
-                 
-                 
                 <p><b>Miranda Naser</b></p>
                 <p>Álvarez y asociados<br>+34-91-1234-567</p>
-
                 <p><b>Salma Dubois</b></p>
                 <p>El Pulpo Simpático<br>+34-91-1234-567</p>
-                 
+
                 <p class="titulo" id="idiomas">Idiomas</p>
                 <p>Español - Nativo</p>
                 <p>Inglés - Intermedio</p>
                 <p>Italiano - Básico</p>
+                
                 <p class="titulo" id="intereses">Intereses</p>
                 <p>Senderismo y actividades al
                     aire libre. Arte y fotografía.
                     Literatura y cine.</p>
-                 
-
             </div>
             <div class="col-sm-6 col-md-8" id="section4">
-                <p class="titulo" id="exp_laboral">Experiencia laboral</p> 
-                
-                
+
+                <p class="titulo" id="exp_laboral">Experiencia laboral</p>    
                 <button id="btnMostrar" >Ocultar detalle</button>
-                
                 <h4>- Reportero | 2019 - Actualidad</h4>
-                
-                
                 <div class="items">
                     <p style="color:rgb(32,132,204)"><b>Diario internacional - Barcelona</b></p>
                     <ul>
@@ -144,8 +145,6 @@
                     </ul>
                 </div>
                 <h4>- Periodista y redactor de contenidos | Set. 2017 - Ag. 2019</h4>
-
-                    
                 <div class="items">
                     <p style="color:rgb(32,132,204)"><b>Periódico Nacional - Barcelona</b></p>
                     <ul>
@@ -215,9 +214,8 @@
                         
                     </ul>
                 </div>
+
                 <p class="titulo" id="conocimientos">Conocimientos</p>
-                
-                 
                     <ul>    
                         <li><p>Retoque fotográfico</p></li>
                             <span class="B"></span><span class="B"></span><span class="B"></span><span class="B"></span>
@@ -239,11 +237,7 @@
                             <span class="B"></span><span class="B"></span><span class="B"></span><span class="B"></span>
                             <span class="B"></span><span class="B"></span><span class="B"></span><span class="G"></span>
                             <span class="G"></span><span class="G"> </span>
-       
-                    </ul>    
-           
-
-                           
+                    </ul>                      
 
                 <p class="titulo" id="form_contacto">Formulario de contacto</p>
                 <p>Acá puedes ingresar tus datos para que luego pueda contactarte</p>
@@ -253,21 +247,19 @@
                         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese Nombre" required>
                         <input type="text" class="form-control" id="tel" name="tel" placeholder="Ingrese teléfono" required>
                         <textarea id="mensaje" class="form-control" name="mensaje" placeholder="Ingese mensaje (Opcional)"></textarea>
-                        <button type="submit" id="btnEnviar" class="btn btn-primary" style="background-color: rgb(32,132,204);">Enviar datos</button>
+                        <button type="submit" id="btnEnviar" class="btn btn-primary">Enviar datos</button>
                     </form>
                 </div>
             </div>
 
         </div>
     </div>
-    </section>
+ 
     <footer>
-        CV con datos ficticios creado por Diego Nieto. nieto06@gmail.com 
+        CV con datos ficticios creado por Diego Nieto. <a href="mailto:nieto06@gmail.com">nieto06@gmail.com </a>
     </footer>
+
     <script src="script.js"></script>
 </body>
-
-
-
 
 </html>

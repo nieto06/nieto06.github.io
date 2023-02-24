@@ -85,17 +85,8 @@ h4  {
 
 }
 
-/* #barra {
-   display: block
-}
 
-@media only screen and (min-width: 992px) {
-  #barra {
-    display: none
-  }
-} */
-
-.B {   /* estilo para los circulos azules */
+.B {   /* estilo para los circulos azules de la parte de Conocimientos */
    background: rgb(32,132,204);
    border-radius: 50%;
    width: 20px;
@@ -106,7 +97,7 @@ h4  {
 
 
 
-.G {   /* estilo para los circulos grises */
+.G {   /* estilo para los circulos grises de la parte de Conocimientos */
    background: gray;
    border-radius: 50%;
    width: 20px;
@@ -120,8 +111,7 @@ h4  {
    margin-bottom: 20px;
 }
 
-input, textarea {
-   
+input, textarea {  
    margin-bottom: 20px;
 }
 
@@ -129,6 +119,9 @@ textarea {
    height: 100px;
 }
 
+#btnEnviar, .navbar {
+   background-color: rgb(32,132,204);
+}
 
 footer {
    margin: 10px;
